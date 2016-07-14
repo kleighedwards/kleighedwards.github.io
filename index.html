@@ -3,6 +3,7 @@
 <html>
 	<head>
 	
+		<link>link type="text/css" rel="stylesheet" href="stylesheet.css"</link>
 		<title>Java the Hard Way</title>
 		
 	</head>
@@ -14,8 +15,8 @@
 		<h2>Discussion Topics</h2>
 		
 		<h3>Switch vs. If/Else Statements</h3>
-			<p>What is the difference between ‘switch’ and ‘if/else’? 
-			When would you use one versus the other?</p>
+			<p><em>What is the difference between ‘switch’ and ‘if/else’? 
+			When would you use one versus the other?</em></p>
 			
 			<p>Both “switch” and “if/else” statements can be used to compare variables. 
 			Switch statements are much more simplified than if/else statements, but they 
@@ -24,62 +25,56 @@
 			value). You cannot define variables within a switch statement. You are also 
 			unable to compare whether the value inside the switch statement is less than, 
 			greater than, greater than or equal to etc. to another value. It simply checks 
-			to see whether or not the two variables are equal. 
+			to see whether or not the two variables are equal.</p> 
 
-			There are benefits to using switch statements, however. Once the computer 
+			<p>There are benefits to using switch statements, however. Once the computer 
 			begins to read the code for a certain “case,” it will continue running  this 
 			code until it hits a “break.” This means that, in certain instances, you can 
 			leave large portions of your code essentially blank, as long as you include 
-			what is necessary before the break. 
+			what is necessary before the break.</p>
 
-			In the “ThirtyDays” exercise in Java the Hard Way, for example, we were able 
+			<p>In the “ThirtyDays” exercise in Java the Hard Way, for example, we were able 
 			to do just that. In the latter half of the assignment, we were told to compare 
 			months of the year based on how many total days each month had. As most months 
 			have either 30 or 31 days, we were able to, in essence, group those months 
-			together as they were all included before the break statement.
+			together as they were all included before the break statement.</p>
 
-					switch(month)
-					{
-							case 9:
-							case 4:
-							case 6:
-							case 11: days = 30;
-				   					 break;
+			<img src "Switch.png">
 
-			If/else statements, in comparison, can be used for a wide variety of 
+			<p>If/else statements, in comparison, can be used for a wide variety of 
 			comparisons. You are able to include multiple values/variables and you are 
 			able to define variables within if/else statements. You are also able to 
 			compare values less than, greater than, etc. to each other. Unless the data 
 			you’re working with is fairly simplistic, it’s best to use if/else statements.</p>
 		
 		<h3>The Difference Between ( = ) ( == ) and ( .equals )</h3>
-			<p>When would you use ‘=’ vs ‘==’ vs ‘.equals’? Explain what each of these 
-			does and in which cases you should use them.</p>
+			<p><em>When would you use ‘=’ vs ‘==’ vs ‘.equals’? Explain what each of these 
+			does and in which cases you should use them.</em></p>
 			
 			<p>A standard equals sign ( “=“ ) is often used for defining or “declaring” 
 			variables. Say for example your code included an integer ( x ) with a value 
 			equal to 10. You could declare the variable as: “int x = 10”. That particular 
-			integer now holds a value of ten. 
+			integer now holds a value of ten.</p> 
 
-			Two equal signs ( “==“ ) are used to note when two values are equal to each 
+			<p>Two equal signs ( “==“ ) are used to note when two values are equal to each 
 			other (or to check if two values are equal to one another). If you wanted to 
 			set two variables as equal values, you would use this notation. 
 			For example: “x == y”. This tells the computer that the variables x and y are 
-			of equal value. 
+			of equal value.</p>
 
-			That may work well enough with numeric values, but when it comes to words 
+			<p>That may work well enough with numeric values, but when it comes to words 
 			or phrases (Switch values), different notation is needed. The “.equals“ 
 			notation is used to set two words or phrases equal to each other. Say your 
 			program utilizes a password function. You would need a way to check to see if 
-			the password being entered matches the password stored on file. 
-			For example:
+			the password being entered matches the password stored on file.</p>
+			<p>For example:</p>
 			
-			typedPassword.equals(“WhateverThePasswordActuallyIs”)</p>
+			<p>typedPassword.equals(“WhateverThePasswordActuallyIs”)</p>
 		
 		<h3>For, While, and Do While Loops</h3>
-			<p>What is the difference between a ‘for’, ‘while’ and ‘do while’ loop? 
+			<p><em>What is the difference between a ‘for’, ‘while’ and ‘do while’ loop? 
 			Give an example of when you would use one versus another. What is the benefit 
-			of a ‘do while’ over a ‘while’? </p>
+			of a ‘do while’ over a ‘while’? </em></p>
 			
 			<p>“For,” “while,” and “do while” loops all allow you to repeat chunks of code 
 			so long as certain conditions are met. For loops operate quite a bit 
@@ -87,23 +82,23 @@
 			of times the code will loop. At the start of a for loop, you initialize (or 
 			give a value to) a variable, the code will then loop as long as the condition 
 			you set is true, and then the program will update the variable based on the 
-			parameters you define. 
+			parameters you define.</p>
 
-			For example, you initialize a variable ( x ) with a value of 1. You then tell 
+			<p>For example, you initialize a variable ( x ) with a value of 1. You then tell 
 			the computer to continue looping until x is greater than or equal to 10. 
 			Finally, you tell the computer how to modify x. Say you want to add 2 to x at 
 			the end of each loop. As long as x is less than 10, the program will run this 
 			code. As soon as these conditions are false, the program will exit the loop. 
 			If you know how many times you would like your program to loop, you may want 
-			to use a for loop.
+			to use a for loop.</p>
 
-			While and do while loops, however, will continue to loop indefinitely so long 
+			<p>While and do while loops, however, will continue to loop indefinitely so long 
 			as the condition is true. (The number of loops being a value you do not 
 			explicitly outline in your code.) Say, for instance, you would like the user 
 			to guess a number. You can use while/do while loops to repeat code 
-			indefinitely until the user guesses the correct value. 
+			indefinitely until the user guesses the correct value.</p>
 
-			One benefit do while loops have over regular while loops is that the program 
+			<p>One benefit do while loops have over regular while loops is that the program 
 			will check for the condition at the end of the loop as opposed to the 
 			beginning. This means that the program will always run the code in the body of 
 			a do while loop and then check to see if it should continue looping. In a 
@@ -111,9 +106,9 @@
 			and will skip over it entirely if the condition is false. </p>
 		
 		<h3>Importing additional objects</h3>
-			<p>What happens when you include ‘import java.util.Scanner;’ in your code? 
+			<p><em>What happens when you include ‘import java.util.Scanner;’ in your code? 
 			Where does this functionality come from? What is the ‘java’ in 
-			‘java.util.Scanner;’?</p>
+			‘java.util.Scanner;’?</em></p>
 			
 			<p>Not all programs function in the exact same way. Therefore some programs 
 			may require different tools than others to operate. Java (along with many 
@@ -129,9 +124,9 @@
 			libraries.</p>
 		
 		<h3>Math.random() function</h3>
-			<p>To generate a random number you use ‘Math.random()’. What is ‘Math’? 
+			<p><em>To generate a random number you use ‘Math.random()’. What is ‘Math’? 
 			What is the return type of the ‘.random()’ method. Why is the ‘M’ in ‘Math’ 
-			capitalized.</p>
+			capitalized.</em></p>
 			
 			<p>As mentioned before, Java has a variety of different toolsets you can 
 			utilize. Some of these tools can only be accessed when perusing through Java’s 
@@ -142,9 +137,9 @@
 			Making alterations to the “Math.random()” function will change what sorts of 
 			random values the computer prints out. You could, for example, ask the 
 			function to print an integer instead of a double or even alter the range of 
-			values to 1 - 5 or even 20 - 200 (whatever values you like). 
+			values to 1 - 5 or even 20 - 200 (whatever values you like).</p>
 
-			It’s worth mentioning that Java is a “static” language, meaning that your code 
+			<p>It’s worth mentioning that Java is a “static” language, meaning that your code 
 			is case sensitive. Typing “math.random()” instead of “Math.random()” will 
 			cause errors when you eventually go to compile your code. </p>
 	
