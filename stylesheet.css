@@ -1,11 +1,15 @@
 body {
-background-color: #9AE5E5;
-color: #254D74;
-font-family: Verdana, sans-serif;
-margin: 10px 10px 10px 10px;
+	background-color: #9AE5E5;
+	color: #254D74;
+	font-family: Verdana, sans-serif;
+	margin: 20px 20px 20px 20px;
 }
 
 h1 {
-text-align: center;
+	text-align: center;
+}
+
+p {
+	margin: 50px 50px 50px 50px;
 }
 
