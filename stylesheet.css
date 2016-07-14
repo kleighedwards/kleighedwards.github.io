@@ -14,10 +14,10 @@ p {
 }
 
 div {
-	height: 50px;
-	width: 100px;
+	height: 75px;
+	width: 300px;
 	border: 2px solid black;
 	border-radius: 5px;
 	background-color: #80dfff;
-	margin: 20px 50px 10px 5px;
+	margin: auto;
 }
